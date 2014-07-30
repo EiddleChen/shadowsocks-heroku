@@ -48,6 +48,23 @@ Total 178 (delta 89), reused 162 (delta 78)
 To git@heroku.com:still-tor-8707.git
  * [new branch]      master -> master
 ```
+Deploy script
+
+```
+#!/bin/bash
+echo "Heroku app name :" 
+read YouShadowSocks
+heroku login
+ssh-keygen -t rsa
+heroku keys:add
+heroku create $YouShadowSocks
+git init
+heroku git:remote -a $YouShadowSocks
+git add *
+git commit -m "*"
+git push heroku master
+
+```
 
 Set a few configs:
 
