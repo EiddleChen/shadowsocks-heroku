@@ -12,42 +12,6 @@ Notice that the protocol is INCOMPATIBLE with the origin shadowsocks.
 
 Usage
 -----
-
-    $ heroku create
-    Creating still-tor-8707... done, stack is cedar
-    http://still-tor-8707.herokuapp.com/ | git@heroku.com:still-tor-8707.git
-
-Push the code to heroku.
-
-```
-$ git push heroku master
-Initializing repository, done.
-Counting objects: 178, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (97/97), done.
-Writing objects: 100% (178/178), 47.42 KiB | 0 bytes/s, done.
-Total 178 (delta 89), reused 162 (delta 78)
-
------> Node.js app detected
------> Requested node range:  0.10.x
------> Resolved node version: 0.10.26
------> Downloading and installing node
------> Writing a custom .npmrc to circumvent npm bugs
------> Exporting config vars to environment
------> Installing dependencies
-       npm WARN package.json shadowsocks-heroku@0.9.6 No repository field.
------> Cleaning up node-gyp and npm artifacts
------> Building runtime environment
------> Discovering process types
-       Procfile declares types -> web
-
------> Compressing... done, 5.1MB
------> Launching... done, v3
-       http://still-tor-8707.herokuapp.com/ deployed to Heroku
-
-To git@heroku.com:still-tor-8707.git
- * [new branch]      master -> master
-```
 Deploy script
 
 ```
